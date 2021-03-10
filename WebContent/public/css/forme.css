@@ -1,0 +1,25 @@
+body {
+    position: relative;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+.form-control {
+    height: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.form-control input,
+.form-control select,
+textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+}
+.invaild {
+    border: 1px solid red;
+}
+.err {
+    color: red;
+    font-size: 14px;
+}

@@ -1,0 +1,123 @@
+body {
+    position: relative;
+    background-image: url(../img/bg-pc-home.png);
+    background-size: cover;
+    background-position: left 5px top -20px;
+    background-repeat: no-repeat;
+    --blue: #292B6B;
+    --pup: #BD216A;
+    --lpup: #9D648D;
+    --red: #FF0F0F;
+    /* overflow: hidden; */
+    resize: none;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+/* Common */
+
+a.nav-item.nav-link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+    position: relative;
+}
+a.active.nav-item.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    bottom: 2px;
+    background: black;
+    left: 10px;
+}
+#answer {
+    /* padding: 10px; */
+    margin: 10px 0;
+    background-color: white;
+    /* justify-content: center; */
+}
+#answer .col {
+    width: 16px !important;
+    max-width: 16px;
+    /* border: 1px solid black; */
+    padding: 0 5px;
+    margin: 0 6px;
+}
+#end,
+#start {
+    width: 250px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.ketqua {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+.ketqua .ketquacontent h3 {
+    text-transform: uppercase;
+    color: rgb(45, 146, 45);
+}
+.ketqua a {
+    margin-top: 150px;
+    font-size: 25px;
+}
+
+/* Thi */
+
+@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 834px) {
+    .dainav {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 2;
+        width: 300px;
+        height: 100vh;
+        padding: 50px;
+        transition: .5s;
+        animation: ani .5s forwards;
+        background-color: rgb(245, 245, 245);
+    }
+}
+@media only screen and (max-width: 414px) {
+    .dainav {
+        /* position: absolute; */
+        /* right: 0px; */
+        /* top: 10px; */
+        /* z-index: 2; */
+        width: 200px;
+        height: 100vh;
+        /* font-size: ; */
+        padding: 50px;
+        /* background-color: rgb(245, 245, 245); */
+    }
+}
+@keyframes ani {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
+}

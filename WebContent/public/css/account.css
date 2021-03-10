@@ -1,0 +1,85 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.wallpp{
+	position: absolute;
+	width:100%;
+	height:100%;
+	background-color: #2A323C;
+}
+
+.account-page{
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.account-page{
+	width: 40%;
+	padding: 25px 0;
+	background-color: #323C48;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+}
+
+.account-page .title{
+	color: #AEB2B7;
+	margin-bottom: 10px;
+}
+
+.account-page form .ip-g{
+	margin: 10px 0;
+	width: 350px;
+}
+
+.account-page form .ip-g .ip{
+	background: #3B4654;
+	border: 1px solid gray;
+	padding: 7px 14px;
+	outline: none;
+	color: whitesmoke;
+	font-size: 90%;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.account-page form .ip-g .ip:focus{
+	border: 1px solid whitesmoke;
+}
+
+.account-page form .ip-g button{
+	color: white;
+	background: #15A4B5;
+	border: none;
+	font-size: 90%;
+	padding: 10px 15px;
+	width: 50%;
+	border: 1px solid #12bed1;
+	border-radius: 5px;
+	outline: none;
+}
+
+.account-page form .ip-g .err{
+	color: red;
+	font-size: 90%;
+}
+
+.account-page form div:nth-child(3){
+	text-align: center;
+}
+
+.account-page form table{
+	width: 100%;
+}
+
+.account-page form a{
+	text-decoration: none;
+	color: #AEB2B7;
+}
